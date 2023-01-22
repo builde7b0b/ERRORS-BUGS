@@ -1,0 +1,29 @@
+ #CSS FONTFACE NOT WORKING - FIX
+  ###############################
+    https://github.com/pagelines/Docs/blob/master/tutorials/adding-custom-fonts.md
+    https://css-tricks.com/snippets/css/using-font-face-in-css/
+    https://stackoverflow.com/questions/42008218/font-face-not-working-with-github-pages
+    https://stackoverflow.com/questions/71330969/how-to-load-custom-font-on-github-pages
+    FIX: https://stackoverflow.com/questions/55339889/how-to-self-host-fonts-on-github-pages-website-fonts-not-loading
+    FIX = append - ../
+
+    #Code:
+    font-face {
+    font-family: 'BadDogSCapsSSKBold';
+    src: url('../font/BadDogSCapsSSKBold.svg#BadDogSCapsSSKBold') format('svg'),
+    url('../font/BadDogSCapsSSKBold.ttf') format('truetype'),
+    url('../font/BadDogSCapsSSKBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    font-face {
+    src: url('../https://assets.codepen.io/xxxxxx/MUSICNET.ttf') format('truetype');
+    }
+
+
+    h1 {
+    font-family: 'CustomFont';
+    font-weight:normal;
+    font-style:normal;
+    }
